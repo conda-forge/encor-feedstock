@@ -1,17 +1,17 @@
 {% set name = "encor" %}
-{% set version = "1.1.2" %}
+{% set version = "1.1.5" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/encor-{{ version }}.tar.gz
-  sha256: ab1dd9eeb9e9801816b3c59f8e5bd7d23e5d787387685051ead419818d435e40
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/encor-{{ version }}.tar.gz
+  sha256: 649bb2f830379722a8aff07d548f87acb9b2f11a320dde4cbd72364e07fa0dce
 
 build:
   script: {{ PYTHON }} -m pip install . -vv
-  number: 5
+  number: 0
 
 requirements:
   build:
